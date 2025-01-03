@@ -1,0 +1,83 @@
+body {
+    background: url(images/img.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 7px;
+    color: white;
+}
+
+.input-field input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: black;
+    font-size: 1.2em;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    transition: all 0.3s;
+    width: 450px;
+}
+
+.input-field label {
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.input-field input:focus+label,
+.input-field input:valid+label {
+    top: -20px;
+    left: 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

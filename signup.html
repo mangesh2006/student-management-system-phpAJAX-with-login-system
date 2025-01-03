@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>SIGNUP</h2>
+            <div id="message" class="error"></div>
+            <div id="success_message" class="success"></div>
+            <div class="input-field">
+                <input type="text" id="username" autocomplete="off" required>
+                <label for="username"><i class="bi bi-person-fill"></i> Username</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" autocomplete="off" required>
+                <label for="email"><i class="bi bi-envelope-fill"></i> Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" autocomplete="off" required>
+                <label for="password"><i class="bi bi-lock-fill"></i> Password</label>
+            </div>
+            <button id="login_btn" onclick="signup()"><i class="bi bi-clipboard-check-fill" style="font-size: 1em; font-weight: bold;"></i>
+                Signup</button>
+            <p>Already Have an Account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

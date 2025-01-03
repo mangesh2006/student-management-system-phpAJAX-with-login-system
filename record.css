@@ -1,0 +1,178 @@
+body {
+    background: url("images/img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.search {
+    color: white;
+    width: 100%;
+    height: 10px;
+    max-height: 1000px;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    transition: all 0.3s;
+    font-size: 1em;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.12 5.71a1 1 0 0 0-1.42 1.42L10.59 12l-4.89 4.88a1 1 0 0 0 1.42 1.42L12 13.41l4.88 4.89a1 1 0 0 0 1.42-1.42L13.41 12l4.89-4.88a1 1 0 0 0 0-1.41z" stroke="white" stroke-width="2"/></svg>') no-repeat center center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.record {
+    margin-top: 10px;
+    width: min-content;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.record table {
+    color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.record table tr {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 10px;
+}
+
+.btn {
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.modal-content {
+    color: white;
+    width: 450px;
+    max-width: max-content;
+    height: 550px;
+    max-height: 1000px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    font-size: 1.75em;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    margin-top: 18px;
+    right: 15px;
+    top: 0;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 7px;
+    color: white;
+}
+
+.input-field input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: black;
+    font-size: 1.2em;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    transition: all 0.3s;
+    width: 450px;
+}
+
+.input-field label {
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.input-field input:focus+label,
+.input-field input:valid+label {
+    top: -20px;
+    left: 0;
+}
