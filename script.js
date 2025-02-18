@@ -132,3 +132,16 @@ function login() {
             });
     }
 }
+
+function showpassword() {
+    var password = document.getElementById("password");
+    var eye = document.getElementById("eye");
+
+    if (password.type === 'password') {
+        password.type = 'text';
+        eye.src = './images/hidden.png';
+    } else {
+        password.type = 'password';
+        eye.src = './images/eye.png';
+    }
+}

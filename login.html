@@ -21,13 +21,15 @@
             <div class="input-field">
                 <input type="password" id="password" autocomplete="off" name="password" required>
                 <label for="password"><i class="bi bi-lock-fill"> </i>Password</label>
+                <img onclick="showpassword()" src="./images/eye.png" alt="Show" id="eye" width="20" height="20">
             </div>
             <div class="forgot-remember">
                 <label><input type="checkbox" id="checkbox" name="remember_me"> Remember me</label>
                 <a href="forgot.html">Forgot Password?</a>
                 </>
             </div>
-            <button id="login_btn" onclick="login()"><i class="bi bi-box-arrow-in-right" style="font-size: 1.1em; font-weight: bold;"></i> Login</button>
+            <button id="login_btn" onclick="login()"><i class="bi bi-box-arrow-in-right"
+                    style="font-size: 1.1em; font-weight: bold;"></i> Login</button>
             <p>Don't Have an Account? <a href="signup.html">Signup</a></p>
         </div>
         <script src="script.js"></script>
